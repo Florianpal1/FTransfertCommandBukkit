@@ -5,8 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class FTransfertCommand extends JavaPlugin {
 
-    private ChatListener chatListener;
-
     @Override
     public void onEnable() {
         this.getServer().getMessenger().registerIncomingPluginChannel(this, "ftransfert:command", new ChatListener(this));
